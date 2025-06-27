@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎤 TYDIDS Transcript</h1>
+      <p class="subtitle">Live Audio Transcription</p>
+    </header>
+
+    <section class="controls">
+      <div class="api-status" id="apiStatus">
+        <span id="apiIndicator">❌</span>
+        <span id="apiText">API Key Required</span>
+      </div>
+      
+      <div class="recording-controls">
+        <button id="startBtn" class="btn btn-primary" disabled>
+          🎤 Start Recording
+        </button>
+        <button id="stopBtn" class="btn btn-danger" disabled>
+          ⏹️ Stop Recording
+        </button>
+        <button id="clearBtn" class="btn btn-secondary">
+          🗑️ Clear
+        </button>
+      </div>
+
+      <div id="recordingStatus" class="recording-status hidden">
+        <div class="pulse"></div>
+        <span id="statusText">Listening...</span>
+      </div>
+    </section>
+
+    <section class="transcript-section">
+      <h3>Live Transcript</h3>
+      <div id="transcript" class="transcript-display">
+        <div class="placeholder">
+          Your live transcript will appear here...
+          <br><small>Click "Start Recording" to begin</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="summarizeBtn" class="btn btn-success" disabled>
+        📋 Summarize
+      </button>
+      <button id="copyBtn" class="btn btn-info" disabled>
+        📋 Copy Markdown
+      </button>
+      <button id="optionsBtn" class="btn btn-secondary">
+        ⚙️ Settings
+      </button>
+    </section>
+
+    <div id="summary" class="summary hidden"></div>
+  </div>
+
+  <script src="../lib/storage-manager.js"></script>
+  <script src="../lib/gemini-client.js"></script>
+  <script src="../lib/audio-processor.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

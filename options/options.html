@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tydids transcript Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Settings</h1>
+  <div class="form-group">
+    <label for="apiKey">Google Gemini API Key:</label>
+    <input type="password" id="apiKey" size="40">
+  </div>
+  <button id="save">Save</button>
+  <div id="status"></div>
+
+  <hr>
+
+  <h2>Saved Transcripts</h2>
+  <div class="toolbar">
+    <button id="refreshTranscripts">Refresh List</button>
+    <button id="clearAllTranscripts" class="danger">Clear All</button>
+  </div>
+  <div id="transcriptsList">
+    <p>Loading transcripts...</p>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

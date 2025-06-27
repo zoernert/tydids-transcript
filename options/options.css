@@ -1,0 +1,121 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+#status {
+  margin-top: 10px;
+  color: green;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+.toolbar button {
+  margin-right: 10px;
+}
+
+button.danger {
+  background-color: #d93025;
+  color: white;
+  border: none;
+}
+
+#transcriptsList {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 100px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.transcript-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.transcript-item:last-child {
+  border-bottom: none;
+}
+
+.transcript-item h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+}
+
+transcript-item p {
+  margin: 0 0 10px 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.transcript-item .actions button {
+  margin-right: 5px;
+  font-size: 0.8em;
+  padding: 4px 8px;
+}
+
+.speaker-management {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.speaker-management h4 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+}
+
+.speaker-management ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.speaker-management li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.speaker-management label {
+  margin-bottom: 0;
+  margin-right: 10px;
+  width: 80px;
+  font-weight: bold;
+}
+
+.speaker-management input {
+  flex-grow: 1;
+}
